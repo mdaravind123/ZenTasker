@@ -1,8 +1,8 @@
 -- CreateTable
 CREATE TABLE "User" (
-    "user_id" SERIAL NOT NULL,
-    "user_name" TEXT NOT NULL,
-    "emailId" TEXT NOT NULL,
+    "user_id" TEXT NOT NULL,
+    "userName" TEXT NOT NULL,
+    "email" TEXT NOT NULL,
     "password" TEXT NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
 
@@ -10,7 +10,7 @@ CREATE TABLE "User" (
 );
 
 -- CreateIndex
-CREATE UNIQUE INDEX "User_user_name_key" ON "User"("user_name");
+CREATE UNIQUE INDEX "User_userName_key" ON "User"("userName");
 
 -- CreateIndex
-CREATE UNIQUE INDEX "User_emailId_key" ON "User"("emailId");
+CREATE UNIQUE INDEX "User_email_key" ON "User"("email");

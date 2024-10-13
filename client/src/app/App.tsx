@@ -1,8 +1,13 @@
 import React from "react";
+import TodoApp from "../pages/TodoApp";
 import "../styles/App.css";
 
 const App: React.FC = () => {
-  return <div className="text-blue-600 text-3xl text-center">App</div>;
+  return (
+    <div>
+      <TodoApp />
+    </div>
+  );
 };
 
 export default App;
